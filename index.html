@@ -17,26 +17,24 @@
     <link href="css/slides.min.css" rel="stylesheet" type="text/css">
 
 
-    <script src="mustachelatest.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
-    <script id="mysvg" src="js/mysvg.js"></script>
-	<script>
-		function loadtemp(){
-			document.getElementById('svghtml').innerHTML = svgtemp;
-	      }
-	</script>
+    <script src="js/mustachelatest.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/mysvg.js"></script>
+  	<script>
+  		function loadtemp(){
+  			document.getElementById('svgHTMLCommomAllSlides').innerHTML = svgTemplateCommonAllSlides;
+  	      }
+  	</script>
 
-    <!-- Fix flash of unstyled content  -->
-    <style>html:not(.page-loaded) svg, html:not(.page-loaded) nav, html:not(.page-loaded) img, html:not(.page-loaded) .dropdown, html:not(.page-loaded) .sidebar{display:none;}</style>
- 
-</head>
+      <!-- Fix flash of unstyled content  -->
+    <style>html:not(.page-loaded) svg, html:not(.page-loaded) nav, html:not(.page-loaded) img, html:not(.page-loaded) .dropdown, html:not(.page-loaded) .sidebar{display:none;}</style></head>
 
 
 
 <body class="slides zen animated noPreload" onload="loadtemp()">
-
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none" id="svghtml"></svg>
-
+<!-- svg -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" id="svgHTMLCommomAllSlides"></svg>
+<!-- svg ends -->
 
 <!-- Dialog Container -->
 <div class="dialogContainer">
@@ -50,11 +48,14 @@
         </div>
       </div>
     </div>
-<!-- ending for dialog container -->
 </div>
 
-
-
+<!-- Navigation -->
+<nav class="side ">
+  <div class="navigation">
+    <ul></ul>
+  </div></nav>
+<!-- navigation ends -->
 
 
 <!-- Panel Top #01 -->
@@ -75,7 +76,7 @@
         <li><a href="OurActivities.html">Our Activities</a></li>
         <li><a href="Locations.html">Locations</a></li>
       </ul>
-      <a class="button blue rounded small" href="Contact.html">Contact Us</a> 
+      <a class="button blue rounded small" href="Contact.html">About & Contact</a> 
     </div>
     <!-- right menu ends -->
   </div>
@@ -88,13 +89,8 @@
       </a>
     </div>
     <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use></svg></span></div>
-  </div>
-</nav>
-
-
-
-
-
+  </div></nav>
+<!-- top panel ends -->
 
 <!-- Sidebar for mobile-->
 <nav class="sidebar" data-sidebar-id="1">
@@ -109,17 +105,57 @@
       <li><a href="index.html">Home</a></li>
        <li><a href="OurActivities.html">Our Activites</a></li>
        <li><a href="Locations.html">Locations</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
+        <li><a href="Contact.html">About & Contact</a></li>
         <li><a href="https://mohgpa.wordpress.com">&copy; Mohit Kumar</a></li>
     </ul>
     
-  </div>
-</nav>
+  </div></nav>
 <!-- Side BAR ends-->
 
 
+<!-- Panel Bottom #02 -->
+<nav class="panel bottom desktop  forceMobileView hideOnScroll" >
+  <div class="sections desktop">
+    <div class="left"></div>
+    <div class="center">
+      <ul class="menu uppercase">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="OurActivities.html">Our Activities</a></li>
+        <li><a href="Locations.html">Locations</a></li>
+        <li><a href="Contact.html">About & Contact</a></li>
+        <li><a href="https://mohgpa.wordpress.com">&copy; Mohit Kumar</a></li>
+      </ul>
+    </div>
 
+    <div class="right"></div>
+    
+  </div>
 
+  <div class="sections compact hidden"></div>
+</nav>
+<!-- bottom panel ends -->
+<!-- thiscomment has code inside expand to see it -->
+    <!-- Compressed Styles -->
+    <link href="css/slides.min.css?501341" rel="stylesheet" type="text/css">
+
+    
+    <!-- Fonts and Material Icons -->
+    <!-- Waiting for Google to add Inter to the fonts.google.com: https://github.com/google/fonts/issues/1455 -->
+    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Material+Icons"/>
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+        .slides { font-family: 'Inter', sans-serif; }
+        @supports (font-variation-settings: normal) {
+          .slides { font-family: 'Inter var', sans-serif; }
+        }
+    </style>
+    <!-- jQuery 3.4.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Compressed Scripts -->
+    <script src="js/slides.min.js?501341" type="text/javascript"></script>
+
+<!-- DONOT TOUCH ANYTHING ABOVE THIS HARIBOLL!!! -->
 
 
 
@@ -291,13 +327,6 @@
 
 
 
-
-
-<style>
-
-</style>
-
-
 <section class="slide after safron" data-title="Testimonials" data-name="testimonials" >
   <div class="content">
     <div class="container">
@@ -307,6 +336,17 @@
           
           <h4 class="margin-bottom-2 ae-1">Don't Believe What we Say , Believe What Others Say About US</h4>
 
+
+          	<!-- controller -->
+            <ul class="controller dots ae-3 space" data-slider-id="testimonials">
+                <li class="dot selected"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li><li class="dot"></li>
+                
+            </ul>
+
+          <br>
           <ul class="flex">
             <li class="col-6-12">
 
@@ -368,15 +408,12 @@
           </ul>
 
           <br>
-          	<!-- controller -->
+          <!-- controller -->
             <ul class="controller dots ae-3 space" data-slider-id="testimonials">
                 <li class="dot selected"></li>
                 <li class="dot"></li>
                 <li class="dot"></li>
-                <li class="dot"></li><li class="dot"></li>
-                
-            </ul>
-
+                <li class="dot"></li><li class="dot"></li></ul>
 
         </div>
         
@@ -388,53 +425,6 @@
 
 
 
-<!-- Panel Bottom #02 -->
-<nav class="panel bottom desktop  forceMobileView hideOnScroll" >
-  <div class="sections desktop">
-    <div class="left"></div>
-    <div class="center">
-      <ul class="menu uppercase">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="OurActivities.html">Our Activities</a></li>
-        <li><a href="Locations.html">Locations</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
-        <li><a href="https://mohgpa.wordpress.com">&copy; Mohit Kumar</a></li>
-      </ul>
-    </div>
-
-    <div class="right"></div>
-    
-  </div>
-
-  <div class="sections compact hidden"></div>
-</nav>
-
-<!-- panel bottom ends -->
-
-
-
-
-
-
-    <!-- Compressed Styles -->
-    <link href="css/slides.min.css?501341" rel="stylesheet" type="text/css">
-
-    
-    <!-- Fonts and Material Icons -->
-    <!-- Waiting for Google to add Inter to the fonts.google.com: https://github.com/google/fonts/issues/1455 -->
-    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css?family=Material+Icons"/>
-    <style>
-        @import url('https://rsms.me/inter/inter.css');
-        .slides { font-family: 'Inter', sans-serif; }
-        @supports (font-variation-settings: normal) {
-          .slides { font-family: 'Inter var', sans-serif; }
-        }
-    </style>
-    <!-- jQuery 3.4.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Compressed Scripts -->
-    <script src="js/slides.min.js?501341" type="text/javascript"></script>
      
 </body>
 </html>
