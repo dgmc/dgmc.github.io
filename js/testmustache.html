@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mustache.js Inline Method</title>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script>
+      var view = {
+        name : "Joe",
+        occupation : "Web Developer"
+      };
+
+      function loadtemp(){
+        var output = Mustache.render("{{name}} is a  {{occupation}}", view);
+        document.getElementById('person').innerHTML = output;
+        // var data = {
+        //   title: "Constructing HTML Elements"
+        // }
+        // var template = $("#tutorial-template").html();
+        // var html = Mustache.render(template, data);
+        // $("body").append(html);
+        // }
+        test1();
+      }
+    </script>
+
+    <script id="tutorial-template" src="test2.js" type="text/template">
+    </script>
+
+    <script src="test.js"></script>
+    
+
+
+  </head>
+  <body onload="loadtemp()" >
+    <p id="person"></p>
+
+  </body>
+</html>
+
