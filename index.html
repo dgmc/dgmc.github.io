@@ -17,6 +17,10 @@
     <link href="css/slides.min.css" rel="stylesheet" type="text/css">
 
 
+    <script src="./Example mailchimp — Slides 5.0.6 Template Generator_files/slides.js" type="text/javascript"></script>
+    <!-- <script src="./Example mailchimp — Slides 5.0.6 Template Generator_files/plugins.js" type="text/javascript"></script> -->
+
+
     <script src="js/mustachelatest.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/mysvg.js"></script>
@@ -156,6 +160,117 @@
     <script src="js/slides.min.js?501341" type="text/javascript"></script>
 
 <!-- DONOT TOUCH ANYTHING ABOVE THIS HARIBOLL!!! -->
+
+
+<script src="./Example mailchimp — Slides 5.0.6 Template Generator_files/jquery.ajaxchimp.min.js"></script>
+<script>
+  $(function(){
+    $('#subscribe').ajaxChimp({
+      url: 'https://github.us19.list-manage.com/subscribe/post?u=1b1d7803f8ed22ee09c5e2171&amp;id=53533fb7e5',
+      callback: callbackFunction,
+      language: 'custom'
+    });
+
+    //custom messages
+    $.ajaxChimp.translations.custom = {
+      'submit': 'Submitting...',
+      0: 'Thank you for the subscription!',
+      1: 'Please enter your email',
+      2: 'An email address must contain a single @',
+      3: 'The domain portion of the email address is invalid (the portion after the @: )',
+      4: 'The username portion of the email address is invalid (the portion before the @: )',
+      5: 'This email address looks fake or invalid. Please enter a real email address'
+    };
+
+    //js function on success
+    function callbackFunction (resp) {
+      if (resp.result === 'success') {
+        $('input[name="subscribe-submit"]').attr('value', 'Check email').addClass('green');
+      }
+    }
+  });
+</script>
+
+<!-- (2) Copy styles -->
+<style>
+  .subscribe-message {
+    display: block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    max-width:462px;
+    margin:0 auto;
+    border-radius:4px;
+          
+    /* animation */  
+    -webkit-transform:scale(0);
+    transform:scale(0);
+    opacity:0;
+    max-height:0;
+    padding:0;
+    border-width:0;
+    
+    -webkit-transition:0.5s;
+    transition:0.5s;
+  }
+  .subscribe-message a { font-weight:600; }
+  .subscribe-message.valid,
+  .subscribe-message.error {
+    -webkit-transform:scale(1);
+    transform:scale(1);
+    max-height:132px;
+    opacity:1;
+    padding:14px 20px;
+    border:2px solid;
+    margin-top: 20px;
+  }
+</style>
+
+
+
+<section class="slide fade-6 kenBurns deepOrange" data-title="NewsLetter" data-name="NewsLetter">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      	<div class="fix-12-12">
+          <ul class="flex">
+            <li class="col-6-12">
+            	<h2 class="margin-bottom-2 small ae-1"> OFFER VALID ONLY TODAY!!</h2>
+            	<!-- <img src="dgmclogo.png" class="wide"  alt="img"> -->
+            	<!-- <img src="bg.jpeg" width="300" height="300"  alt="img"> -->
+            	<!-- <img src="rotate.jpg" width="300" height="300"  alt="img"> -->
+            	<img src="rotate.jpg" class="wide ae-1"  alt="img">
+            	<!-- <img src="bgdiscount1.gif" width="300" height="300" alt="img"> -->
+            </li>
+            <li class="col-6-12">
+            	<div>
+	            <!-- Be sure you keep this form layout as it is. You can change the rest -->
+	            
+	            <h5 class="margin-bottom-2 ae-1">Fill the form below to get your copy of <b class="boldest">Bhagavad gita</b> today!</h5>
+	            <form class="slides-form ae-1 fix-8-12 done" id="subscribe" novalidate="true">
+
+					<input type="text" value="" name="FNAME" class="ae-1" id="mce-FNAME" placeholder="First Name">
+
+					<input type="text" value="" name="LNAME" class="ae-1" id="mce-LNAME" placeholder="Last Name">
+
+					<input type="text" name="PHONE" class="ae-1" value="" id="mce-PHONE" placeholder="Phone number">
+
+					<input type="email" class="ae-1" value="" name="EMAIL" id="subscribe-email" placeholder="Your e-mail" class="wide error">
+
+	              <button type="submit"  value="" name="subscribe-submit" class="wide ae-1 button blue gradient">Get Updates</button>
+
+	              <label for="subscribe-email" class="subscribe-message ae-1 error">An email address must contain a single @</label>
+	            </form>
+	          </div>
+      		</li>
+          </ul>
+          
+        </div>
+
+      </div>
+  </div>
+</div>
+ <div class="background" style="background-image:url(assets/img/background/ak1.jpg)"></div>
+</section>
 
 
 
