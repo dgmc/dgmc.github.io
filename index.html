@@ -354,41 +354,204 @@
   }
 </style>
 
+<style>
+  .pill.controller {
+    font-size: 0;
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 6px;
+  }
+  .pill.controller li {
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid #fff;
+    font-size: initial;
+    -webkit-transiton: 0.5s;
+    transiton: 0.5s;
+  }
+
+  .pill.controller li:first-child {
+    border-radius: 4px 0 0 4px;
+  }
+  .pill.controller li:last-child {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .pill.controller li.selected {
+    background: #fff;
+    color: #303030;
+  }
+</style>
+
+<!-- Popup Video -->
+<div class="popup autoplay" data-popup-id="youtubevideo1">
+  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedVideo popupContent shadow rounded">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EGd524H_y7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Popup Video -->
+<div class="popup autoplay" data-popup-id="youtubevideo3">
+  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedVideo popupContent shadow rounded">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FU1PqnphCSc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Popup Video -->
+<div class="popup autoplay" data-popup-id="youtubevideo2">
+  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedVideo popupContent shadow rounded">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sp8XucanPUQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Popup Video -->
+<div class="popup autoplay" data-popup-id="youtubevideo4">
+  <div class="close"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use></svg></div>
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+        <div class="fix-10-12">
+          <div class="embedVideo popupContent shadow rounded">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G2MAV7aNd40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="slide fade-6 kenBurns deepOrange" data-title="SubscribeForm" data-name="SubscribeForm">
   <div class="content">
     <div class="container">
       <div class="wrap">
       	<div class="fix-12-12">
-          <ul class="flex">
+
+          <div class="fix-10-12">
+          <ul class="pill controller margin-bottom-5 ae-1" data-slider-id="1">
+            <li class="selected"><a id="SubForm">Subscriber Form</a></li>
+            <li >Latest Youtube Videos</li>
+            <!-- <li>Latest Insta Posts</li> -->
+            <!-- <li>Latest FaceBook Posts</li> -->
+          </ul>
+        </div>        
+
+        <ul class="slider animated " data-slider-id="1">
+
+        <li class="selected">
+            <ul class="flex">
             <li class="col-6-12">
-            	<h2 class="margin-bottom-2 small ae-1"> OFFER VALID ONLY TODAY!!</h2>
-            	<!-- <img src="dgmclogo.png" class="wide"  alt="img"> -->
-            	<!-- <img src="bg.jpeg" width="300" height="300"  alt="img"> -->
-            	<!-- <img src="rotate.jpg" width="300" height="300"  alt="img"> -->
-            	<img src="assets/currentUse/rotate.jpg" class="wide ae-1"  alt="img">
-            	<!-- <img src="bgdiscount1.gif" width="300" height="300" alt="img"> -->
+              <h2 class="margin-bottom-2 small ae-1"> OFFER VALID ONLY TODAY!!</h2>
+              <img src="assets/currentUse/rotate.jpg" class="wide ae-1"  alt="img">
             </li>
             <li class="col-6-12">
-            	<div>
-	            <!-- Be sure you keep this form layout as it is. You can change the rest -->
-	            
-	            <h5 class="margin-bottom-2 ae-1">Fill the form below to get your copy of <b class="boldest">Bhagavad gita</b> today!</h5>
-	            <form class="slides-form ae-1 fix-8-12 done" id="subscribe" novalidate="true">
+              <div>
+              <!-- Be sure you keep this form layout as it is. You can change the rest -->
+              
+              <h5 class="margin-bottom-2 ae-1">Fill the form below to get your copy of <b class="boldest">Bhagavad gita</b> today!</h5>
+              <form class="slides-form ae-1 fix-8-12 done" id="subscribe" novalidate="true">
 
-					<input type="text" value="" name="FNAME" class="ae-1" id="mce-FNAME" placeholder="Name">
+          <input type="text" value="" name="FNAME" class="ae-1" id="mce-FNAME" placeholder="Name">
 
-					<input type="text" name="PHONE" class="ae-1" value="" id="mce-PHONE" placeholder="Phone number">
+          <input type="text" name="PHONE" class="ae-1" value="" id="mce-PHONE" placeholder="Phone number">
 
-					<input type="email" class="ae-1" value="" name="EMAIL" id="subscribe-email" placeholder="Your e-mail" class="wide error">
+          <input type="email" class="ae-1" value="" name="EMAIL" id="subscribe-email" placeholder="Your e-mail" class="wide error">
 
-	              <button type="submit"  value="" name="subscribe-submit" class="wide ae-1 button blue gradient">Get Updates</button>
+                <button type="submit"  value="" name="subscribe-submit" class="wide ae-1 button blue gradient">Get Updates</button>
 
-	              <label for="subscribe-email" class="subscribe-message ae-1 error">An email address must contain a single @</label>
-	            </form>
-	          </div>
-      		</li>
+                <label for="subscribe-email" class="subscribe-message ae-1 error">An email address must contain a single @</label>
+              </form>
+            </div>
+          </li>
           </ul>
+        </li>
+
+
+        <li >
+
+          <div class="fix-5-12">
+              <ul class="slider animated  autoplay" data-slider-interval="2500" data-slider-id="youtubeplay">
+                
+                <li class="selected">
+                  <p><a href="https://www.youtube.com/watch?v=sp8XucanPUQ&t">If video is unavailable please Click here to view It</a></p>
+                  <div class="videoThumbnail shadow rounded ae-4 fromCenter popupTrigger" data-popup-id="youtubevideo2">
+                  <img src="assets/img/bad-things-good-people.png" alt="Video Thumbnail"/>
+                  </div>
+                  <br>
+                  <h6 class="ae-2">Wen Bad things happen to Good People</h6>
+                  
+                </li>
+
+                <li >
+                  <div class="videoThumbnail shadow rounded ae-4 fromCenter popupTrigger" data-popup-id="youtubevideo1">
+                  <img src="assets/img/coronavirus.png" alt="Video Thumbnail"/>
+                  </div>
+                  <br>
+                  <h6 class="ae-2">Behind and Beyond Covid-19</h6>
+                </li>
+                
+                <li >
+                  <div class="videoThumbnail shadow rounded ae-4 fromCenter popupTrigger" data-popup-id="youtubevideo3">
+                  <img src="assets/img/adversity.png" alt="Video Thumbnail"/>
+                  </div><br>
+                  <h6 class="ae-2">When Adversity Becomes Oppurtunity</h6>
+                </li>
+                <li >
+                  <div class="videoThumbnail shadow rounded ae-4 fromCenter popupTrigger" data-popup-id="youtubevideo4">
+                  <img src="assets/img/motivation.png" alt="Video Thumbnail"/>
+                  </div><br>
+                  <h6 class="ae-2">Motivation Ki AAG</h6>
+                </li>
+               
+              </ul>
+          </div>
+            
+           <ul class="controller dots ae-3 space" data-slider-id="youtubeplay">
+                <li class="dot selected"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                <li class="dot"></li>
+                
+            </ul>
+            <br>
+
+        </li>
+
+        </ul>  
+
+
+
+
+          
           <p class="small light ae-2"><span class="opacity-8"> ~ Swipe down for an Overview About Us ~</span></p> 
           
         </div>
